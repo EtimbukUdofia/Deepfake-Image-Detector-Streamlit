@@ -21,6 +21,7 @@ if not os.path.exists(MODEL_PATH):
 # Load the model
 model = load_model(MODEL_PATH)
 
+
 # --- Image preprocessing ---
 def preprocess_image(uploaded_file):
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
@@ -32,6 +33,7 @@ def preprocess_image(uploaded_file):
     img = img / 255.0
     img = np.expand_dims(img, axis=0)
     return img
+
 
 # --- Streamlit UI ---
 st.title("🕵️‍♂️ Deepfake Image Detector")
