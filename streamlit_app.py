@@ -7,7 +7,9 @@ import os
 
 # --- Settings ---
 MODEL_PATH = "cnn_model.keras"
-REMOTE_MODEL_URL = "https://huggingface.co/VictoryUdofia/deepfake-model/resolve/main/cnn_model.keras"
+REMOTE_MODEL_URL = (
+    "https://huggingface.co/VictoryUdofia/deepfake-model-h5/resolve/main/cnn_model.h5"
+)
 TARGET_SIZE = (224, 224)
 
 # --- Download model if not available ---
