@@ -6,7 +6,7 @@ import urllib.request
 import os
 
 # --- Settings ---
-MODEL_PATH = "cnn_model.keras"
+MODEL_PATH = "cnn_model.h5"
 REMOTE_MODEL_URL = (
     "https://huggingface.co/VictoryUdofia/deepfake-model-h5/resolve/main/cnn_model.h5"
 )
